@@ -1,0 +1,13 @@
+stepDefinition\PatientBannerSteps.class
+stepDefinition\FooterLinksSelectionSteps.class
+stepDefinition\CareGapsSteps.class
+stepDefinition\LoginSteps.class
+stepDefinition\HomePageSteps.class
+stepDefinition\GlobalSchedulesSteps.class
+stepDefinition\TabSelectionSteps.class
+stepDefinition\Hooks.class
+stepDefinition\HccSteps.class
+context\TestContext.class
+stepDefinition\SearchPatientSteps.class
+testRunner\TestRunner.class
+stepDefinition\FooterSteps.class

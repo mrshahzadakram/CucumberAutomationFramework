@@ -1,0 +1,246 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 37359510200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 613900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.BeforeEveryStep(Scenario)"
+                }
+              }
+            ],
+            "line": 4,
+            "name": "the user has logged in",
+            "match": {
+              "location": "LoginSteps.the_user_has_logged_in()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 453300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.AfterEveryStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-26T16:46:56.946Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3797826400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Verify that the AUC tab has search bar and text above the search bar is correct",
+        "description": "",
+        "id": "verifying-auc-tab-of-persivia-application-is-working-fine;verify-that-the-auc-tab-has-search-bar-and-text-above-the-search-bar-is-correct",
+        "after": [
+          {
+            "result": {
+              "duration": 4649416700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17002116800,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 301800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.BeforeEveryStep(Scenario)"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "the user searched a patient",
+            "match": {
+              "location": "SearchPatientSteps.the_user_searched_a_patient()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 479000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.AfterEveryStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1784525300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 347800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.BeforeEveryStep(Scenario)"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "the user clicks \"tab\" of \"auc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tab\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"auc\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TabSelectionSteps.the_user_clicks_of(String,String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 587100,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.AfterEveryStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60274200,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 312200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.BeforeEveryStep(Scenario)"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "a search bar is shown on ui",
+            "match": {
+              "location": "AUCSteps.a_search_bar_is_shown_on_ui()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 661900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.AfterEveryStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35684300,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 387900,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.BeforeEveryStep(Scenario)"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "search bar text is \"Please select an exam or indication\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please select an exam or indication\"",
+                  "offset": 19
+                }
+              ],
+              "location": "AUCSteps.search_bar_text_is(String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 507700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "Hooks.AfterEveryStep(Scenario)"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanityTest"
+          }
+        ]
+      }
+    ],
+    "name": "Verifying AUC tab of Persivia application is working fine",
+    "description": "",
+    "id": "verifying-auc-tab-of-persivia-application-is-working-fine",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AUC.feature",
+    "tags": []
+  }
+]

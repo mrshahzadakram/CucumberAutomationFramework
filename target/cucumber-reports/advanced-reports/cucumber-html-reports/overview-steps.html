@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Persivia Automation Report</td>
+        <td>1</td>
+      <td>26 Jul 2020, 17:11</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">CareGapsSteps.columns_are_shown_on_ui_of_care_gaps(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="4611068700">4.611</td>
+              <td class="duration" data-value="4611068700">4.611</td>
+              <td class="duration" data-value="4611068700">4.611</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CareGapsSteps.is_fifth_column(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12226900">0.012</td>
+              <td class="duration" data-value="12226900">0.012</td>
+              <td class="duration" data-value="12226900">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CareGapsSteps.is_first_column(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="35285100">0.035</td>
+              <td class="duration" data-value="35285100">0.035</td>
+              <td class="duration" data-value="35285100">0.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CareGapsSteps.is_fourth_column(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13163400">0.013</td>
+              <td class="duration" data-value="13163400">0.013</td>
+              <td class="duration" data-value="13163400">0.013</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CareGapsSteps.is_second_column(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="13587700">0.013</td>
+              <td class="duration" data-value="13587700">0.013</td>
+              <td class="duration" data-value="13587700">0.013</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">CareGapsSteps.is_third_column(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12459200">0.012</td>
+              <td class="duration" data-value="12459200">0.012</td>
+              <td class="duration" data-value="12459200">0.012</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterLinksSelectionSteps.the_user_clicks_of(String,String)</td>
+              <td>4</td>
+              <td class="duration" data-value="53119250">0.053</td>
+              <td class="duration" data-value="53119250">0.072</td>
+              <td class="duration" data-value="212477000">0.212</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.columns_are_shown_on_footer_section(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="229399700">0.229</td>
+              <td class="duration" data-value="229399700">0.229</td>
+              <td class="duration" data-value="229399700">0.229</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.is_fifth_icon_of_footer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15349500">0.015</td>
+              <td class="duration" data-value="15349500">0.015</td>
+              <td class="duration" data-value="15349500">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.is_first_icon_of_footer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15760600">0.015</td>
+              <td class="duration" data-value="15760600">0.015</td>
+              <td class="duration" data-value="15760600">0.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.is_fourth_icon_of_footer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16241000">0.016</td>
+              <td class="duration" data-value="16241000">0.016</td>
+              <td class="duration" data-value="16241000">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.is_second_icon_of_footer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="14616300">0.014</td>
+              <td class="duration" data-value="14616300">0.014</td>
+              <td class="duration" data-value="14616300">0.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.is_sixth_icon_of_footer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="51450200">0.051</td>
+              <td class="duration" data-value="51450200">0.051</td>
+              <td class="duration" data-value="51450200">0.051</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">FooterSteps.is_third_icon_of_footer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="14606800">0.014</td>
+              <td class="duration" data-value="14606800">0.014</td>
+              <td class="duration" data-value="14606800">0.014</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">GlobalSchedulesSteps.date_field_has_date_of_today()</td>
+              <td>1</td>
+              <td class="duration" data-value="16919800">0.016</td>
+              <td class="duration" data-value="16919800">0.016</td>
+              <td class="duration" data-value="16919800">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">GlobalSchedulesSteps.the_screen_is_toggled_to_calendar()</td>
+              <td>1</td>
+              <td class="duration" data-value="973738700">0.973</td>
+              <td class="duration" data-value="973738700">0.973</td>
+              <td class="duration" data-value="973738700">0.973</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">GlobalSchedulesSteps.the_user_lands_on_auc_dashboard_web_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2029023200">2.029</td>
+              <td class="duration" data-value="2029023200">2.029</td>
+              <td class="duration" data-value="2029023200">2.029</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">GlobalSchedulesSteps.today_button_is_available_on_calendar_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="24501200">0.024</td>
+              <td class="duration" data-value="24501200">0.024</td>
+              <td class="duration" data-value="24501200">0.024</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.columns_are_shown_on_hcc_ui_under_active_problem_lists(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="30048424200">30.048</td>
+              <td class="duration" data-value="30048424200">30.048</td>
+              <td class="duration" data-value="30048424200">30.048</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.columns_are_shown_on_hcc_ui_under_dropped_codes(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="20045677600">20.045</td>
+              <td class="duration" data-value="20045677600">20.045</td>
+              <td class="duration" data-value="20045677600">20.045</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_first_column_of_active_dropped_codes(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="230000">0.000</td>
+              <td class="duration" data-value="230000">0.000</td>
+              <td class="duration" data-value="230000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_first_column_of_active_problem_lists(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="740200">0.000</td>
+              <td class="duration" data-value="740200">0.000</td>
+              <td class="duration" data-value="740200">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_fourth_column_of_active_dropped_codes(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="202600">0.000</td>
+              <td class="duration" data-value="202600">0.000</td>
+              <td class="duration" data-value="202600">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_fourth_column_of_active_problem_lists(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="221200">0.000</td>
+              <td class="duration" data-value="221200">0.000</td>
+              <td class="duration" data-value="221200">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_second_column_of_active_dropped_codes(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="204600">0.000</td>
+              <td class="duration" data-value="204600">0.000</td>
+              <td class="duration" data-value="204600">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_second_column_of_active_problem_lists(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="643100">0.000</td>
+              <td class="duration" data-value="643100">0.000</td>
+              <td class="duration" data-value="643100">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_third_column_of_active_dropped_codes(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="199800">0.000</td>
+              <td class="duration" data-value="199800">0.000</td>
+              <td class="duration" data-value="199800">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HccSteps.is_third_column_of_active_problem_lists(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="271700">0.000</td>
+              <td class="duration" data-value="271700">0.000</td>
+              <td class="duration" data-value="271700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomePageSteps.the_user_is_on_home_page()</td>
+              <td>6</td>
+              <td class="duration" data-value="6250964916">6.250</td>
+              <td class="duration" data-value="6250964916">7.657</td>
+              <td class="duration" data-value="37505789500">37.505</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.InitializeTest(Scenario)</td>
+              <td>8</td>
+              <td class="duration" data-value="3029806500">3.029</td>
+              <td class="duration" data-value="3029806500">3.345</td>
+              <td class="duration" data-value="24238452000">24.238</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.TearDownTest(Scenario)</td>
+              <td>8</td>
+              <td class="duration" data-value="2775878800">2.775</td>
+              <td class="duration" data-value="2775878800">4.859</td>
+              <td class="duration" data-value="22207030400">22.207</td>
+              <td class="failed">87.50%</td>
+            </tr>
+            <tr>
+              <td class="location">LoginSteps.the_user_has_logged_in()</td>
+              <td>8</td>
+              <td class="duration" data-value="5058900800">5.058</td>
+              <td class="duration" data-value="5058900800">10.126</td>
+              <td class="duration" data-value="40471206400">40.471</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">PatientBannerSteps.the_data_of_selected_patient_is_shown_on_ui()</td>
+              <td>1</td>
+              <td class="duration" data-value="1150624700">1.150</td>
+              <td class="duration" data-value="1150624700">1.150</td>
+              <td class="duration" data-value="1150624700">1.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">PatientBannerSteps.there_are_tabs_including_hcc_and_auc_on_ui(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="5478159400">5.478</td>
+              <td class="duration" data-value="5478159400">5.478</td>
+              <td class="duration" data-value="5478159400">5.478</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">SearchPatientSteps.the_user_searched_a_patient()</td>
+              <td>4</td>
+              <td class="duration" data-value="8833050600">8.833</td>
+              <td class="duration" data-value="8833050600">11.187</td>
+              <td class="duration" data-value="35332202400">35.332</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">TabSelectionSteps.the_user_clicks_of(String,String)</td>
+              <td>3</td>
+              <td class="duration" data-value="710401500">0.710</td>
+              <td class="duration" data-value="710401500">0.954</td>
+              <td class="duration" data-value="2131204500">2.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>36</td>
+            <td>70</td>
+            <td class="duration">3.241</td>
+            <td class="duration">40.471</td>
+            <td class="duration">3:46.923</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
